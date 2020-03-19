@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 //import "node_modules\@openzeppelin\contracts\token\ERC721\ERC721Full.sol";
 import "./ERC721Full.sol";
 
-contract color is ERC721Full{
+contract Color is ERC721Full{
 
 string[] public colors;
 mapping(string => bool) _colorexist;
