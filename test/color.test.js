@@ -11,7 +11,7 @@ contract('color',(accounts)=>{
             contract = await Color.deployed();
         })
 
-        it('deploys successfully',async()=>{
+        it('deploys successfully',()=>{
             const add = contract.address
             assert.notEqual(add,'');
             assert.notEqual(add,0x0);
@@ -28,7 +28,11 @@ contract('color',(accounts)=>{
             const symbol = await contract.symbol()
             assert.equal(symbol,"COLOR");
         })
-
+        
+        // it('has a token ID',async()=>{
+        //     const url = await contract.tokenURI(URL)
+        //     assert.equal(url,"_color");
+        // })
     })
 
     describe('minting',async()=>{
@@ -53,7 +57,9 @@ contract('color',(accounts)=>{
 
     describe('indexing',async()=>{
 
-        let r;
+        before(async()=>{
+            contract = await Color.deployed();
+        })
 
         it('lists colors',async()=>{
             await contract.mint('HBF7777')
@@ -66,10 +72,12 @@ contract('color',(accounts)=>{
 
             for( var i =1 ;i<=totalSupply;i++){
                 color = await contract.colors(i-1);
-                result.push(color);
+                result.push(color); 
             }
             let expected = ['HBF7779','HBF7777','FFFFFFF','#000000'];
             assert.equal(result.join(','), expected.join(','));
+            // console.log(expected)
+            // console.log(result)
         })
 
     })

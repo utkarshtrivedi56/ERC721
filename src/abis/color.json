@@ -1973,12 +1973,13 @@
         }
       },
       "links": {},
-      "address": "0x9a080d0D84f1217e73c89564d198C46Ce52ba273",
-      "transactionHash": "0xfc349ef1533bf4162cb168838290c929b5a61f3fb31507b2f6f1fa4dfa945b65"
+      "address": "0x9f826fE944Fc5ad0148FF8D2e196eCA17871EC41",
+      "transactionHash": "0xe1747726cd238795bd180d9c706d8199a11cf6f7c7401806ccfb954eaa7c47c4"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-03-19T09:19:35.526Z",
+  "updatedAt": "2020-03-23T11:47:00.468Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {
