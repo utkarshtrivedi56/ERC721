@@ -1977,9 +1977,8 @@
       "transactionHash": "0xe1747726cd238795bd180d9c706d8199a11cf6f7c7401806ccfb954eaa7c47c4"
     }
   },
-  "schemaVersion": "3.0.23",
-  "updatedAt": "2020-03-23T11:47:00.468Z",
-  "networkType": "ethereum",
+  "schemaVersion": "3.2.0",
+  "updatedAt": "2020-06-19T06:33:21.356Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {
